@@ -2,22 +2,21 @@
 const AppConfig = {
   site: {
     name: "Sidiki Coulibaly Portfolio",
-    version: "2.0.0",
-    author: "Sidiki Coulibaly"
+    version: "2.0.0"
   },
   
   themes: {
     light: {
-      primary: "#2563eb",
-      accent: "#f59e0b",
-      background: "#ffffff",
-      text: "#1e293b"
+      primary: "#0070f3",
+      accent: "#0070f3",
+      background: "#f7fafc",
+      text: "#1a202c"
     },
     dark: {
-      primary: "#3b82f6",
-      accent: "#fbbf24",
-      background: "#0f172a",
-      text: "#f1f5f9"
+      primary: "#00d4ff",
+      accent: "#00d4ff",
+      background: "#0a192f",
+      text: "#ffffff"
     }
   }
 };
