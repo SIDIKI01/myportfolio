@@ -8,13 +8,7 @@
   "scripts": {
     "dev": "vite",
     "build": "powershell -ExecutionPolicy Bypass -File build.ps1",
-    "build:node": "node build.js",
-    "build:vite": "vite build",
-    "preview": "vite preview",
-    "start": "python -m http.server 8000",
-    "serve": "npx serve .",
-    "lint": "echo 'Vérification du code...'",
-    "format": "echo 'Formatage du code...'"
+    "preview": "vite preview"
   },
   "keywords": [
     "portfolio",

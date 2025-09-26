@@ -69,8 +69,9 @@ $itemsToCopy = @(
     "styles",
     "scripts", 
     "Images",
+    "public",
     "app-config.js",
-    "build-simple.js"
+    "Sidiki_Coul_CV.pdf"
 )
 
 # Copier les éléments
