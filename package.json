@@ -1,14 +1,60 @@
 {
-  "name": "vite-starter",
-  "private": true,
-  "version": "0.0.0",
+  "name": "sidiki-coulibaly-portfolio",
+  "private": false,
+  "version": "2.0.0",
+  "description": "Portfolio professionnel moderne et responsive pour Sidiki Coulibaly - IT Support Analyst & IT Infrastructure Engineer",
   "type": "module",
+  "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "lint": "echo 'Vérification du code...'",
+    "format": "echo 'Formatage du code...'"
   },
+  "keywords": [
+    "portfolio",
+    "website",
+    "professional",
+    "responsive",
+    "IT",
+    "infrastructure",
+    "system-administrator",
+    "fortigate",
+    "vmware",
+    "veeam",
+    "ninjaone",
+    "pure-storage"
+  ],
+  "author": {
+    "name": "Sidiki Coulibaly",
+    "email": "scoulou82@gmail.com",
+    "url": "https://www.linkedin.com/in/sidiki-coulibaly-0814a0218"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SIDIKI01/portfolio.git"
+  },
+  "homepage": "https://sidiki01.github.io/portfolio/",
+  "bugs": {
+    "url": "https://github.com/SIDIKI01/portfolio/issues",
+    "email": "scoulou82@gmail.com"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
   "devDependencies": {
     "vite": "^5.4.2"
-  }
+  },
+  "dependencies": {}
 }
