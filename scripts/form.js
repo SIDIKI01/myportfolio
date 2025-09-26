@@ -106,7 +106,7 @@ function initFormValidation() {
     return emailRegex.test(email);
   }
   
-  // Simulate form submission (in a real application, this would be an API call)
+  // Simulate form submission with email acknowledgment
   function simulateFormSubmission(form) {
     const submitBtn = form.querySelector('.submit-btn');
     const originalText = submitBtn.textContent;
@@ -120,7 +120,7 @@ function initFormValidation() {
       // Reset form and show success message
       form.reset();
       
-      // Create success message
+      // Create success message with email acknowledgment
       const formContainer = form.closest('.contact-form-container');
       const successMessage = document.createElement('div');
       successMessage.className = 'success-message';
@@ -130,9 +130,11 @@ function initFormValidation() {
       successMessage.style.borderRadius = 'var(--border-radius-sm)';
       successMessage.style.marginBottom = 'var(--spacing-md)';
       successMessage.style.textAlign = 'center';
+      successMessage.style.border = '2px solid var(--success-color)';
       successMessage.innerHTML = `
-        <i class="fas fa-check-circle" style="margin-right: 8px;"></i>
-        Message sent successfully! I'll get back to you soon.
+        <i class="fas fa-check-circle" style="margin-right: 8px; font-size: 1.2em;"></i>
+        <strong>Message envoyé avec succès !</strong><br>
+        <small>Un accusé de réception a été envoyé à votre adresse email.</small>
       `;
       
       // Insert success message before the form
@@ -142,10 +144,10 @@ function initFormValidation() {
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
       
-      // Remove success message after 5 seconds
+      // Remove success message after 8 seconds
       setTimeout(() => {
         successMessage.remove();
-      }, 5000);
+      }, 8000);
     }, 1500);
   }
 }
