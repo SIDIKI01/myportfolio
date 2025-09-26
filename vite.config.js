@@ -16,16 +16,16 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    minify: 'terser',
+    minify: 'esbuild', // Utiliser esbuild au lieu de terser pour éviter les erreurs
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['scripts/main.js', 'scripts/navigation.js'],
-          components: ['scripts/skills.js', 'scripts/projects.js', 'scripts/theme.js'],
-          forms: ['scripts/form.js']
-        }
+        manualChunks: undefined // Simplifier la configuration des chunks
       }
-    }
+    },
+    // Optimisations pour Netlify
+    target: 'es2015',
+    cssCodeSplit: true,
+    chunkSizeWarningLimit: 1000
   },
   
   // Optimisations

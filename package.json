@@ -7,7 +7,9 @@
   "main": "index.html",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "powershell -ExecutionPolicy Bypass -File build.ps1",
+    "build:node": "node build.js",
+    "build:vite": "vite build",
     "preview": "vite preview",
     "start": "python -m http.server 8000",
     "serve": "npx serve .",
@@ -54,7 +56,8 @@
     "not ie 11"
   ],
   "devDependencies": {
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "terser": "^5.24.0"
   },
   "dependencies": {}
 }

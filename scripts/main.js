@@ -1,12 +1,19 @@
 // Main JavaScript file
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize all components
-  initNavigation();
-  initSkillBars();
-  initProjectModals();
-  initThemeToggle();
-  initFormValidation();
+  // Initialize all components safely
+  try {
+    if (typeof initNavigation === 'function') initNavigation();
+    if (typeof initSkillBars === 'function') initSkillBars();
+    if (typeof initProjectModals === 'function') initProjectModals();
+    if (typeof initThemeToggle === 'function') initThemeToggle();
+    if (typeof initFormValidation === 'function') initFormValidation();
+    if (typeof initApp === 'function') initApp();
+  } catch (error) {
+    console.warn('Some initialization functions failed:', error);
+  }
+  
+  // Initialize core functions
   initScrollAnimations();
   initTypingEffect();
   
