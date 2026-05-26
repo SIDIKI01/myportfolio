@@ -240,13 +240,4 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 - **LinkedIn** : [Sidiki Coulibaly](https://www.linkedin.com/in/sidiki-coulibaly-0814a0218)
 - **GitHub** : [SIDIKI01](https://github.com/SIDIKI01)
 
-## 🙏 Remerciements
-
-- Font Awesome pour les icônes
-- Google Fonts pour la typographie
-- Netlify pour l'hébergement
-- GitHub pour le versioning
-
----
-
 *Dernière mise à jour : Septembre 2025*
